@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>{{form.errors}}</p>
+    <form method="post" action="/post/create">
+        {% csrf_token %}
+    <h1>FORM</h1>
+        {{ form.as_p }}
+        <button>Gönder</button>
+    </form>
+
+</body>
+</html>

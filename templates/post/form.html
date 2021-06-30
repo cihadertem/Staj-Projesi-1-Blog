@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block body %}
+
     <p>{{form.errors}}</p>
     <form method="post" action="/post/create">
         {% csrf_token %}
@@ -13,5 +10,4 @@
         <button>Gönder</button>
     </form>
 
-</body>
-</html>
+{% endblock %}
